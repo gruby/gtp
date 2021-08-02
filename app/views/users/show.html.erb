@@ -13,4 +13,14 @@
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
 <%= javascript_pack_tag 'custom' %>
-<%= button_tag 'Do smth', id: 'button-click', type: 'button' %> 
+</br>
+<textarea name="inputwindow" id="inputwindow" cols="50" rows="20" placeholder="Paste your captions here..."></textarea>
+<textarea name="outputwindow" id="outputwindow" cols="50" rows="20"></textarea>
+<br><br>
+<button id="sbvtosrt">Convert SBV to SRT</button>
+<br>
+<button id="srttosbv">Convert SRT to SBV</button>
+<br>
+<input type="text" id="shiftvalue" value="+0:00:00.000">
+<br>
+<button id="timeshift">Shift captions timing (only SBV format)</button> 
