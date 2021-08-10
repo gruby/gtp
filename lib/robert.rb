@@ -1,5 +1,4 @@
 #GOO must be constant (capital letters)
-GOO = "AIzaSyDboCslB-MmvQiA9-NrEn-ulV9L0QYtmQ4"
 
 def list_new_movies(from, to)
   new_ytmovies_ids = []
