@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Web ID</strong>
+  <%= @item.web_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @item.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item.description %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @item.duration %>
+</p>
+
+<p>
+  <strong>Web added:</strong>
+  <%= @item.web_added %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @item.priority %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
