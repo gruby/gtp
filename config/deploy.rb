@@ -5,7 +5,8 @@ set :application, "gtp"
 set :repo_url, "https://github.com/gruby/gtp.git"
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
-append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
+#append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
+append :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle, .bundle public/system public/uploads}
 
 set :keep_releases, 5
 
